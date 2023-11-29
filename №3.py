@@ -34,11 +34,9 @@ def clicked():
             film_name = self.film['name']
             film_rating = self.film['rating']['kp']
             film_year = self.film['year']
-            #film_description = self.film['description']
             return(f'Вам подобран фильм:\n'
                    f'{film_name} {film_year} год\n'
                    f'Рейтинг на кинопоиске: {film_rating}')
-                   #f'Краткое описание: {film_description}')
 
         def show_answer(self):
             film_information = Label(window, text=self.answer(), background="black", foreground="white", font = ("Times New Roman", 20))
